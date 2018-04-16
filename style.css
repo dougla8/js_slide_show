@@ -1,0 +1,79 @@
+/*  CSS document  */
+
+body{
+	font-family: "proxima-nova",sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	color: #5e687f;
+	background: #ffffff;
+	line-height: 1.7em;
+	padding: 0;
+	margin: 0;
+	font-style: normal;
+	}
+
+p{
+	margin-top: 0;
+	padding-top: 0;
+	}
+
+/* -------------------------------------- Links -------------------------------------- */
+
+img{
+    padding: 0;
+    margin: 0;
+    display: block;
+    }
+
+a:link {
+	text-decoration: none;
+	color: #35ff99;
+	outline:none;
+	}
+
+a:active {
+	text-decoration: none;
+	color: #35ff99;
+	}
+
+a:visited {
+	text-decoration: none;
+	color: #35ff99;
+	}
+
+a:hover {
+	text-decoration: none;
+	color: #35ff99;
+	-webkit-transition: color 0.2s ease-in; /*safari and chrome */
+    -o-transition: color 0.2s ease-in; /* opera */
+	}
+
+a img {
+	border: none;
+	padding: 0;
+	margin: 0;
+	vertical-align: middle;
+	}
+
+/* -------------------------------------- Structure -------------------------------------- */
+
+#slide-show{
+
+    width:600px;
+    height:480px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-top: -240px;
+    margin-left: -300px;
+    }
+
+#slide-show img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 1.2s;
+    }
+
+#slide-show img:first-child{ opacity: 1; }
